@@ -1,0 +1,70 @@
+
+.add > h2{
+    color: $link-hover;
+    font-size: 1.25rem;
+    margin: 1.5rem 0 1.5rem;
+
+}
+
+.add__form{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    column-gap: 5px;
+    @include mq(600px){
+        grid-template-columns: 90% 10% ;
+    }
+
+}
+
+.add__inputs{
+   
+    display: flex;
+    justify-content: flex-start;
+    flex-direction:column;
+
+}
+
+.add__inputs > input,
+.add__inputs > select{
+    font-size: 1rem;
+    padding:0.5rem;
+    border: 1px solid $border-color;
+    border-radius: 00.5rem;
+    outline: none;
+
+}
+
+.add__inputs > select{
+   
+    border-radius: 00.5rem;
+    outline: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 00.5rem;
+}
+ 
+
+.add-button{
+   
+    color: $inverse-font-color;
+    font-size: 1rem;
+    background: $header-color;
+    border: 1px solid $header-color;
+    border-radius: 10px;
+    padding: 1.5rem;
+    outline: none;
+}
+
+
+.add-button:focus,
+.add-button:hover{
+    box-shadow: 5px 2px 5px $border-color;
+}
+.add-button:active{
+    transform: (1px ,2px);
+    box-shadow: 1px 1px 0 $font-color;
+}
+.add_addItem{
+    width: 40%;
+ }
+ 

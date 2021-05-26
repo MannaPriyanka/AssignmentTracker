@@ -1,0 +1,119 @@
+.list{
+    width: 100%;
+    max-height: 70vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    color: $font-color;
+    margin-bottom: 0.75rem;
+    border: 1px solid $border-color;
+    border-radius: 00.5rem;
+    @include flexStart;
+    flex-direction: column;
+    position: relative;
+    @include mq(400px){
+        max-height: 75vh;
+    }
+}
+.list::-webkit-scrollbar {
+    display: none;
+}
+.list {
+  -ms-overflow-style: none;  
+  scrollbar-width: none; 
+ 
+}
+.list__row{
+    width: 100%;
+    max-width: 100%;
+    border-bottom: 1px solid $border-color;
+    @include flexStart;
+    flex-direction: row;
+    color: $font-color;
+    padding: 0.5rem;
+}
+
+.list__row:last-child{
+    border: none;
+}
+.list__header{
+    width: 100%;
+    padding: 0.5rem;
+    position: sticky;
+    top:0;
+    text-transform: uppercase;
+    background-color: $header-color;
+    color: $inverse-font-color;
+    font-weight: bold ;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include mq(800px) {
+        flex-direction:row;
+        
+    }
+}
+
+.list__header h1{
+     display: flex;
+     justify-content: flex-start;
+     margin-left: 1rem;
+
+}
+.list__header_select button{
+    background-color: $go-button;
+    margin-left: 0.25rem;
+    color: $inverse-font-color;
+    border: none;
+    width: 20%;
+    padding: 0.5rem;
+
+}
+
+.viewcourse{
+    background-color: $go-button;
+    margin-left: 0.25rem;
+    color: $inverse-font-color;
+    border: none;
+    width: 20%;
+    padding: 0.5rem; 
+    text-decoration: none;
+    border-radius: 00.5rem;
+}
+
+.list__header_select select{
+
+    border: none;
+    width: 60%;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    outline: none;
+
+}
+.list__item{
+    flex-grow: 1;
+    padding: 0.5rem;
+    margin-left: 50px;
+}
+
+
+.list__removeitem{
+    @include flex-center;
+}
+
+.remove-button{
+    height: 100%;
+    width: 100%;
+    font-size: 1.2rem;
+    background: transparent;
+    border: none;
+    padding-right: 0.5rem;
+    outline: none;
+    color: red;
+   
+}
+.remove-button:focus,
+.remove-button:hover{
+
+text-shadow: 2px 2px 5px $shadow-color;
+}

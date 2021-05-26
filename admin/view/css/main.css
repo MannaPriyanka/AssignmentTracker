@@ -1,0 +1,256 @@
+.add > h2 {
+  color: #1b62b3;
+  font-size: 1.25rem;
+  margin: 1.5rem 0 1.5rem;
+}
+
+.add__form {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 80% 20%;
+  column-gap: 5px;
+}
+
+@media only screen and (min-width: 600px) {
+  .add__form {
+    grid-template-columns: 90% 10%;
+  }
+}
+
+.add__inputs {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.add__inputs > input,
+.add__inputs > select {
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: 1px solid rgba(69, 69, 71, 0.87);
+  border-radius: 00.5rem;
+  outline: none;
+}
+
+.add__inputs > select {
+  border-radius: 00.5rem;
+  outline: none;
+  border-bottom: 1px solid black;
+  margin-bottom: 00.5rem;
+}
+
+.add-button {
+  color: #fff;
+  font-size: 1rem;
+  background: #226699;
+  border: 1px solid #226699;
+  border-radius: 10px;
+  padding: 1.2rem;
+  outline: none;
+}
+
+.add-button:focus,
+.add-button:hover {
+  box-shadow: 5px 2px 5px rgba(69, 69, 71, 0.87);
+}
+
+.add-button:active {
+  transform: 1px, 2px;
+  box-shadow: 1px 1px 0 #312f2f;
+}
+
+.add_addItem {
+  width: 40%;
+}
+
+.list {
+  width: 100%;
+  max-height: 70vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  color: #312f2f;
+  margin-bottom: 0.75rem;
+  border: 1px solid rgba(69, 69, 71, 0.87);
+  border-radius: 00.5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+@media only screen and (min-width: 400px) {
+  .list {
+    max-height: 75vh;
+  }
+}
+
+.list::-webkit-scrollbar {
+  display: none;
+}
+
+.list {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.list__row {
+  width: 100%;
+  max-width: 100%;
+  border-bottom: 1px solid rgba(69, 69, 71, 0.87);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  color: #312f2f;
+  padding: 0.5rem;
+}
+
+.list__row:last-child {
+  border: none;
+}
+
+.list__header {
+  width: 100%;
+  padding: 0.5rem;
+  position: sticky;
+  top: 0;
+  text-transform: uppercase;
+  background-color: #226699;
+  color: #fff;
+  font-weight: bold;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media only screen and (min-width: 800px) {
+  .list__header {
+    flex-direction: row;
+  }
+}
+
+.list__header h1 {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 1rem;
+}
+
+.list__header_select button {
+  background-color: limegreen;
+  margin-left: 0.25rem;
+  color: #fff;
+  border: none;
+  width: 20%;
+  padding: 0.5rem;
+}
+
+.viewcourse {
+  background-color: limegreen;
+  margin-left: 0.25rem;
+  color: #fff;
+  border: none;
+  width: 20%;
+  padding: 0.5rem;
+  text-decoration: none;
+  border-radius: 00.5rem;
+}
+
+.list__header_select select {
+  border: none;
+  width: 60%;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  outline: none;
+}
+
+.list__item {
+  flex-grow: 1;
+  padding: 0.5rem;
+}
+
+.list__removeitem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.remove-button {
+  height: 100%;
+  width: 100%;
+  font-size: 1.2rem;
+  background: transparent;
+  border: none;
+  padding-right: 0.5rem;
+  outline: none;
+  color: red;
+}
+
+.remove-button:focus,
+.remove-button:hover {
+  text-shadow: 2px 2px 5px rgba(136, 136, 136, 0.5);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #312f2f;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  min-height: 100vh;
+}
+
+.main {
+  background-color: #fff;
+  width: 100%;
+  max-width: 800px;
+  min-height: 100vh;
+  padding: 1rem;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 800) {
+  .main {
+    min-height: 95vh;
+    max-height: 95vh;
+    border: 1px solid rgba(69, 69, 71, 0.87);
+    box-shadow: 5px 10px 8px rgba(136, 136, 136, 0.5);
+  }
+}
+
+section {
+  width: 100%;
+}
+
+a {
+  color: #226699;
+  font-weight: bold;
+}
+
+a:hover {
+  box-shadow: 5px 10px 8px rgba(136, 136, 136, 0.5);
+}
+
+.bold {
+  font-weight: bold;
+}
+
+b {
+  color: orange;
+}
