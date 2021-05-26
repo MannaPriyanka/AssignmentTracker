@@ -1,5 +1,4 @@
 # AssignmentTracker
-=============
 
 - AssignmentTracker is a PHP MVC based project for keeping track of assignments. 
 - Faculty can add assignment with due dates and marks and later on can check the assignments uploaded by students.
