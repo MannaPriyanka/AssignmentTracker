@@ -4,6 +4,6 @@
 - Faculty can add assignment with due dates and marks and later on can check the assignments uploaded by students.
 - Students can upload assigments and view marks as well as can view the upcoming assignments to be submitted before due dates.
 
-# Project link
+## Project link
 
-Student : <http://assignment-tracker.epizy.com/>
+Student : <https://assignment-tracker.epizy.com/>
