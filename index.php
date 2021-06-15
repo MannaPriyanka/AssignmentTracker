@@ -97,7 +97,12 @@
             include('view/mark_list.php');      
             break;
         
-  
+        case "/": 
+            $course_name = get_course_name($course_id);
+            $courses = get_courses();
+            $assignments = get_assignment_by_course($course_id);
+            include('view/assignment_list.php'); 
+            break;
         default: 
             $course_name = get_course_name($course_id);
             $courses = get_courses();
