@@ -6,4 +6,4 @@
 
 ## Project link
 
-Assignment-Tracker : <https://assignment-tracker.epizy.com/>
+Assignment-Tracker : <http://assignment-tracker.epizy.com/>
